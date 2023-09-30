@@ -38,7 +38,7 @@ const HomePage = () => {
     try{
        const user = JSON.parse(localStorage.getItem('user'))
        setLoading(true)
-       const res = await axios.post('/tasks/get-task',{userid:user._id})
+       const res = await axios.post('/api/v1/tasks/get-task',{userid:user._id})
        setLoading(false)
        setAllTask(res.data)
        console.log(res.data)
@@ -55,7 +55,7 @@ const HomePage = () => {
   const handleDelete = async(record) => {
     try{
       setLoading(true)
-      await axios.post("/tasks/delete-task",{taskId:record._id})
+      await axios.post("/api/v1/tasks/delete-task",{taskId:record._id})
       setLoading(false)
       message.success("Task Deleted")
       window.location.reload()
@@ -71,7 +71,7 @@ const HomePage = () => {
          const user = JSON.parse(localStorage.getItem('user'))
          setLoading(true)
          if(editable){
-          await axios.post('/tasks/edit-task',{payload:{
+          await axios.post('/api/v1/tasks/edit-task',{payload:{
             ...values,
             userId:user._id
           },taskId:editable._id
@@ -79,7 +79,7 @@ const HomePage = () => {
           message.success('Task Edited Successfully')
           window.location.reload()
          }else{
-          await axios.post('/tasks/add-task',{...values,userid:user._id})  
+          await axios.post('/api/v1/tasks/add-task',{...values,userid:user._id})  
          message.success('Task Added Successfully')
          window.location.reload()
          }
