@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  table
+  thead.ant-table-thead
+  .ant-table-cell {
+    width: 100%;
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: rgb(19, 10, 10);
+  background-color:rgb(234, 108, 108);
+}
+
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  .ant-table-cell {
+    width: 100%;
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: rgb(18, 14, 14);
+}
+
+
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  .ant-table-cell {
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ant-table
+  .ant-table-container
+  .ant-table-content{
+ border: 2px solid black;
+ border-radius: 10px;
+}
+
+
+
+.content{
+  height: 80vh;
+}
+
+.navbar{
+  background-color:rgb(234, 108, 108) !important;
+}
+
+.register-page{
+  background-image: url('https://assets.gqindia.com/photos/608c135f6e6a489a62cd254d/16:9/w_1920,c_limit/Apps%20for%20finance%20management.jpg');
+    background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+/* transaction page */
+
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+/* antd icons */
+
+
+.anticon svg{
+  font-size: 20px;
+  cursor: pointer;
+}

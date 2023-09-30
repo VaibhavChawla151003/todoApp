@@ -1,0 +1,17 @@
+
+.add{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.add:hover{
+    background-color: rgb(139, 15, 15);
+    border: 1px solid black;  
+}
+
+.tabledata{
+   margin-top: 90px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
